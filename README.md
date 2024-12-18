@@ -1,3 +1,16 @@
+Not dealing with lerna.
+npm install
+cd firestore-stripe-payments/functions
+npm install --force
+cd ../../firestore-stripe-invoices/functions
+npm install --force
+cd ../../firestore-stripe-web-sdk 
+npm install --force
+cd ..
+npm run build
+
+
+All there junk VVVV
 # UPDATE 2023-10-08:
 This project has now being officially transferred to [Invertase](https://github.com/invertase), who will maintain this extension going forward. Please see [this issue](https://github.com/stripe/stripe-firebase-extensions/issues/524) for more details. 
 It is now recommended to uninstall the `stripe/firestore-stripe-payments` extension and install `invertase/firestore-stripe-payments` from the Firebase Extension Hub.

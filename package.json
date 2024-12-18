@@ -8,7 +8,7 @@
     "lint": "prettier --list-different \"**/*.{js,md,yml,ts,json,yaml}\"",
     "clean": "lerna run --parallel clean",
     "build": "lerna run --parallel build",
-    "postinstall": "lerna bootstrap --no-ci && npm run clean && npm run build",
+    "postinstall": "npm run clean && npm run build",
     "generate-readmes": "lerna run --parallel generate-readme",
     "dev": "cd $npm_config_ext/ && firebase ext:dev:emulators:start --test-params=../.env --project=$npm_config_project",
     "dev:invoices": "npm run dev --ext=firestore-stripe-invoices --project=stripe-subs-ext",
@@ -32,6 +32,7 @@
     "prettier": "^2.4.1"
   },
   "dependencies": {
+    "@invertase/firestore-stripe-payments": "file:firestore-stripe-web-sdk",
     "rimraf": "^3.0.2"
   }
 }
