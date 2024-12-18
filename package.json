@@ -28,7 +28,7 @@
     "url": "https://github.com/stripe/stripe-firebase-extensions/issues"
   },
   "devDependencies": {
-    "lerna": "^3.4.3",
+    "lerna": "^8.1.9",
     "prettier": "^2.4.1"
   },
   "dependencies": {
