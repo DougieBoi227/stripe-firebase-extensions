@@ -1,4 +1,8 @@
-Not dealing with lerna.
+To use this:
+clone repo
+
+then npm build everything (Not dealing with lerna)
+```
 npm install
 cd firestore-stripe-payments/functions
 npm install --force
@@ -8,6 +12,14 @@ cd ../../firestore-stripe-web-sdk
 npm install --force
 cd ..
 npm run build
+```
+
+then use sumtin like
+`"@invertase/firestore-stripe-payments": "file:../../../../Desktop/stripe-firebase-extensions/firestore-stripe-web-sdk",`
+in package.json
+
+
+
 
 
 All there junk VVVV
